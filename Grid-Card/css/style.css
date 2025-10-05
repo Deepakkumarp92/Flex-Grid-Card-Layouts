@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.main-container{
+    text-align: center;
+    padding: 25px;
+}
+.heading{
+    font-size: 6vw;
+    background: linear-gradient(to right bottom, #ccc, #000);
+    color: transparent;
+    background-clip: text;
+    margin-bottom: 22px;
+}
+.product-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 222px);
+    justify-content: center;
+    gap: 25px;
+    box-shadow: 0 0 22px 4px #EFBF04;
+    margin: 0 auto;
+}
+.shop-card{
+    border: 4px solid;
+    border-image: url(https://t3.ftcdn.net/jpg/08/97/14/38/360_F_897143816_8uyvuA4qQSwML0UJR2rlsjucwabQbwAs.jpg);
+    border-image-slice: 6%;
+    background-color: #000;
+    box-shadow: 0 0 26px 2px #EFBF04;
+    cursor: pointer;
+    padding-bottom: 16px;
+}
+.product-image{
+    overflow: hidden;
+}
+.product-image img{
+    width: 100%;
+    height: 180px;
+    padding: 5px 5px 16px 5px;
+    transition: 0.4s ease;
+}
+.product-name{
+    font-size: 18px;
+}
+.product-offer{
+    margin: 6px 0;
+    font-size: 26px;
+}
+.shop-card,.shop-now{
+    color: #C2B067;
+}
+.shop-now{
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.product-image:hover img{
+    transform: scale(1.2);
+}
+.shop-now:hover{
+    border: 4px solid #EFBF04;
+}

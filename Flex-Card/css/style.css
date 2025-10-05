@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.main-container{
+    background-color: #641B2E;
+    padding: 25px;
+    text-align: center;
+}
+.heading{
+    font-size: 4vw;
+    margin-bottom: 22px;
+}
+.product-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+}
+.shop-card{
+    flex-basis: 220px;
+    padding: 26px 0;
+    border-radius: 35px;
+    border: 2px solid #FBDB93;
+    box-shadow: 0 0 80px 4px #FBDB93 inset;
+}
+.product-image img{
+    width: 100px;
+    height: 100px;
+    transition: 0.5s ease;
+    border-radius: 50%;
+    box-shadow: 0 0 22px 4px #000;
+}
+.product-name{
+    padding: 16px 0;
+}
+.product-offer{
+    font-size: 24px;
+}
+.shop-now{
+    text-decoration: none;
+    color: #BE5B50;
+    margin: 12px 0;
+}
+.heading,.product-name{
+    color: #FBDB93;
+}
+.product-image img,.btn{
+    cursor: pointer;
+}
+.product-name,.shop-now{
+    display: block;
+    font-weight: bold;
+}
+.product-name,.btn{
+    font-size: 18px;
+}
+.btn{
+    padding: 10px 22px;
+    background-color: #8A2D3B;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 0 6px 2px #000, 0 0 8px 2px #fff inset;
+    transition: 0.4s ease;
+}
+.product-image img:hover{
+    transform: scale(1.1);
+}
+.btn:hover{
+    color: #FBDB93;
+    transform: scale(1.2);
+}
+.product-image img:hover,.btn:hover{
+    border-radius: 0;
+}
